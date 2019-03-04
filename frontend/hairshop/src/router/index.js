@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import HelloWorld from '@/components/HelloWorld.vue' 
+// @ : root of vue-cli generated src directory of the project
 
 Vue.use(Router)
 
