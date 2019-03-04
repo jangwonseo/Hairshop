@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    hikari: #hikari cp 일때만 jdbc-url을 사용하고 일반적으로는 url사용
+      jdbc-url: jdbc:mysql://localhost:3306/HAIR_SHOP?characterEncoding=UTF-8&serverTimezone=UTC&autoReconnect=true&useSSL=false
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 15032066
+  data:
+    jpa:
+      repositories:
+        enabled: true
+  # jpa:
+  #   properties:
+  #     hibernate:
+  #       format_sql: true
+  # mvc:
+  #   view:
+  #     prefix: /WEB-INF/jsp/
+  #     suffix: .jsp
+
+# logging:
+#   level:
+#     org:
+#       hibernate:
+#         SQL: DEBUG
+#         type:
+#           descriptor:
+#             sql:
+#               BasicBinder: TRACE
+
+server:
+  servlet:
+    context-path: /

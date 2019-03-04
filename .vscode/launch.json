@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HairShopApplication",
+            "request": "launch",
+            "mainClass": "com.example.jangwonseo.HairShopApplication",
+            "projectName": "hairshop"
+        }
+    ]
+}
