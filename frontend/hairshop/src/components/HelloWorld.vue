@@ -2,7 +2,7 @@
   <div class="hello">
     <h1 v-on:click="getData">{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
+      1111For a guide and recipes on how to configure / customize this project,<br>
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
@@ -32,7 +32,8 @@
 
 <script>
 
-const axios = require('axios');
+// const axios = require('axios');
+import axios from 'axios'
 
 export default {
   name: 'HelloWorld',
@@ -41,9 +42,9 @@ export default {
   },
   methods: {
     getData() {
-      axios.get("/hello")
-      .then(function(response) {
-        console.log(response);
+      axios.get('http://localhost:8081/getData')
+      .then((response) => {
+        console.log(response.data);
       });
     }
   }

@@ -26,4 +26,5 @@ logging:
 
 server:
   servlet:
+    port: 8080
     context-path: /
