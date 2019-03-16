@@ -5,5 +5,8 @@
         "xml",
         "php",
         "javascript"
-    ]
+    ],
+
+    // Object with environment variables that will be added to the VS Code process to be used by the terminal on OS X
+    "terminal.integrated.env.osx": "/Users/jangwonseo/WebDev/git-repository/hairshop/frontend/hairshop"
 }
