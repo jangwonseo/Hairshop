@@ -1,12 +1,15 @@
 <template>
   <div class="hello">
+    <link>
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >.
+      For a guide and recipes on how to configure / customize this project,
+      <br>check out the
+      <a
+        href="https://cli.vuejs.org"
+        target="_blank"
+        rel="noopener"
+      >vue-cli documentation</a>.
     </p>
     <h3>Installed CLI Plugins</h3>
     <ul>
@@ -15,27 +18,21 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
           target="_blank"
           rel="noopener"
-          >babel</a
-        >
+        >babel</a>
       </li>
       <li>
         <a
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
           target="_blank"
           rel="noopener"
-          >eslint</a
-        >
+        >eslint</a>
       </li>
     </ul>
     <h3 v-on:click="getData">Essential Links</h3>
-    
   </div>
 </template>
 
 <script>
-
-import axios from 'axios'
-
 export default {
   name: "HelloWorld",
   props: {
@@ -43,8 +40,7 @@ export default {
   },
   methods: {
     getData: function() {
-      axios.get("/getData")
-      .then((response) => {
+      this.$axios.get("/getData").then(response => {
         console.log(response.data);
       });
     }
@@ -53,18 +49,19 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="stylus">
-h3
-  margin 40px 0 0
-
-ul
-  list-style-type none
-  padding 0
-
-li
-  display inline-block
-  margin 0 10px
-
-a
-  color #42b983
+<style scoped>
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
 </style>
